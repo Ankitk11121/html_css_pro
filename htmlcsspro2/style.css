@@ -1,0 +1,82 @@
+*{
+    box-sizing:border-box;
+}
+body {
+    padding: 15px;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+h1 ,h2 {
+    color: green;
+}
+a {
+    text-decoration: none;
+    color: rgb(220, 49, 220);
+}
+
+a:hover {
+    color: tomato;
+    cursor: pointer;
+}
+.row {
+    width: 100%;
+    margin:0px 16px;
+    height: 470px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 5px;
+    padding: 5px;
+    /* border: 2px dashed red; */
+}
+h3 {
+    margin: 10px 5px;
+}
+p {
+    overflow: hidden;
+}
+.row p {
+    margin: 10px 8px;
+}
+.class img {
+    width: 100%;
+}
+.class {
+    border: 1px solid green;
+    width: 24%;
+    height: 50%;
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+    .class {
+        width: 48.5%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .class {
+        width: 343px;
+    }
+
+    p {
+        overflow: auto;
+    }
+} 
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red; 
+  }
+  
+  
